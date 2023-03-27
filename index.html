@@ -14,30 +14,35 @@
         <h1>Payment Form</h1>
         <hr>
         <h2>User Information</h2>
-        <label for ="name">Name: * </label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-      <filedset> <legend> Gender:</legend> 
+        <p>
+        <label for ="fullname">Full Name: * </label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        </p>
+      <fieldset> <legend> Gender:</legend> 
         <input type="radio" name="gender">Male
-        <input type="radio" name="gender">Female</filedset>
-        <br><br>
-        <label for="Address" >Address:</label><br> <textarea placeholder="Enter your Address"></textarea>
-        <br><br>
-       <label for="email">Email:</label> <input type="email" name="email" placeholder="Enter your email" id="email"><br><br>
-       <label for="password">Password:</label> <input type="password" name="password" id="password" placeholder="Enter your password"><br><br>
-       <label for="pincode">Pincode:</label> <input type="number" name="pincode" id="pincode">
-       <br><br>
-       <h2>Payment Information</h2><br><br>
-       Card Type: <select>
+        <input type="radio" name="gender">Female</fieldset>
+        <p>
+        <label for="Address" >Address:</label>
+        <textarea placeholder="Enter your Address"></textarea>
+        </p>
+        <p>
+       <label for="email">Your Email:</label> <input type="email" name="email" placeholder="Enter your email" id="email" required></p>
+       <p><label for="password">Password:</label> <input type="password" name="password" id="password" placeholder="Enter your password" required></p>
+       <p><label for="pincode">Pincode:</label> <input type="number" name="pincode" id="pincode" required></p>
+       
+        <h3>Payment Information</h3>
+        <label for="card">Card Type:</label> <select>
            <option value="#">-Select Card Type-</option>
            <option value="visa">Visa Card</option>
            <option value="rupay">Rupa Card</option>
            <option value="credit">Credit Card</option>
-       </select><br><br>
-       <label for="number">Card Number: *</label>
-       <input type="number" name="card_number" placeholder="1111-2222-3333-4444  " id="number">
-       <br><br>
-       <label for="date">Expiration Date:</label><input type="date" id="date" name="exp_date"><br><br>
-       <label for="cvv">CVV:</label> <input type="number" placeholder="123" id="cvv"><br><br>
+       </select>
+        <p>
+       <label for="number">Card Number: </label>
+       <input type="number" name="card_number" placeholder="1111-2222-3333-4444  " id="number" required>
+        </p>
+       <p><label for="date">Expiration Date:</label><input type="date" id="date" name="exp_date" required></p>
+        <p><label for="cvv">CVV:</label> <input type="number" placeholder="123" id="cvv" required></p>
        <input type="button" value="Pay Now">
     
     
